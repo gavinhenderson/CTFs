@@ -1,0 +1,48 @@
+kMDItemBitsPerSample               = 32
+kMDItemColorSpace                  = "RGB"
+kMDItemContentCreationDate         = 2016-02-10 11:55:56 +0000
+kMDItemContentCreationDate_Ranking = 2016-02-10 00:00:00 +0000
+kMDItemContentModificationDate     = 2016-02-10 11:55:56 +0000
+kMDItemContentType                 = "public.jpeg"
+kMDItemContentTypeTree             = (
+    "public.jpeg",
+    "public.item",
+    "public.data",
+    "public.image",
+    "public.jpeg",
+    "public.content"
+)
+kMDItemCreator                     = "Adobe Photoshop CS6 (Windows)"
+kMDItemDateAdded                   = 2018-09-05 18:02:19 +0000
+kMDItemDateAdded_Ranking           = 2018-09-05 00:00:00 +0000
+kMDItemDisplayName                 = "image.jpg"
+kMDItemEXIFGPSVersion              = "2.3.0.0"
+kMDItemFSContentChangeDate         = 2018-09-05 18:02:19 +0000
+kMDItemFSCreationDate              = 2018-09-05 18:02:15 +0000
+kMDItemFSCreatorCode               = ""
+kMDItemFSFinderFlags               = 0
+kMDItemFSHasCustomIcon             = (null)
+kMDItemFSInvisible                 = 0
+kMDItemFSIsExtensionHidden         = 0
+kMDItemFSIsStationery              = (null)
+kMDItemFSLabel                     = 0
+kMDItemFSName                      = "image.jpg"
+kMDItemFSNodeCount                 = (null)
+kMDItemFSOwnerGroupID              = 20
+kMDItemFSOwnerUserID               = 501
+kMDItemFSSize                      = 44265
+kMDItemFSTypeCode                  = ""
+kMDItemHasAlphaChannel             = 0
+kMDItemInterestingDate_Ranking     = 2016-02-10 00:00:00 +0000
+kMDItemKind                        = "JPEG image"
+kMDItemLatitude                    = 72
+kMDItemLogicalSize                 = 44265
+kMDItemLongitude                   = 138
+kMDItemOrientation                 = 0
+kMDItemPhysicalSize                = 45056
+kMDItemPixelCount                  = 250000
+kMDItemPixelHeight                 = 500
+kMDItemPixelWidth                  = 500
+kMDItemProfileName                 = "sRGB IEC61966-2.1"
+kMDItemResolutionHeightDPI         = 72
+kMDItemResolutionWidthDPI          = 72
