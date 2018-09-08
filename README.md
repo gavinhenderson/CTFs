@@ -2,6 +2,7 @@
 
 My solutions to Capture The Flag challenges
 
-## Completed CTFs
+## CTFs
 
-- PicoCTF [26]
+- PicoCTF
+- IceCTF
