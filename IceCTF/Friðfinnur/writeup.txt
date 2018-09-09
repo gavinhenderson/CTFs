@@ -1,0 +1,1 @@
+Cause an error by going to https://5jqbdve8agd5l1g-fridfinnur.labs.icec.tf/jobs/kb and then you will see the flag on the error page
