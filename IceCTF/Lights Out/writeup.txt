@@ -1,0 +1,1 @@
+The flag is hidden in the styles under 'content'. Set the styles of the summary to display block and the background to white.
