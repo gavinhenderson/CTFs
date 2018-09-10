@@ -1,6 +1,6 @@
 # Completed Challenges
 
-- [x] Roke Relaunch
+- [x] Toke Relaunch
 - [x] Lights Out
 - [x] Friðfinnur
 - [x] helloworld
