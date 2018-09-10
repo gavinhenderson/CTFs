@@ -1,0 +1,2 @@
+Start of by looking at the robots.txt file at https://static.icec.tf/toke/robots.txt
+Then follow the link you see there https://static.icec.tf/toke/secret_xhrznylhiubjcdfpzfvejlnth.html
