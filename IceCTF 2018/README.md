@@ -4,3 +4,4 @@
 - [x] Lights Out
 - [x] Friðfinnur
 - [x] helloworld
+- [ ] Modern Picasso
