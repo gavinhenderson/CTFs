@@ -4,6 +4,7 @@
 - [x] Lights Out
 - [x] Friðfinnur
 - [x] helloworld
+- [x] Simple Overflow
 - [ ] Modern Picasso
 - [ ] Hard Shells
 - [ ] Lost in the Forest
