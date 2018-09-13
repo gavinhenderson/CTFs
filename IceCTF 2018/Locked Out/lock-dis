@@ -1,0 +1,382 @@
+
+lock:	file format ELF32-i386
+
+Disassembly of section .init:
+.init:
+     554:	53 	pushl	%ebx                                      
+     555:	83 ec 08 	subl	$8, %esp
+     558:	e8 13 02 00 00 	calll	531 <main+0x100>
+     55d:	81 c3 a3 1a 00 00 	addl	$6819, %ebx
+     563:	8b 83 ec ff ff ff 	movl	-20(%ebx), %eax
+     569:	85 c0 	testl	%eax, %eax
+     56b:	74 05 	je	5 <.init+0x1E>
+     56d:	e8 f6 00 00 00 	calll	246
+     572:	83 c4 08 	addl	$8, %esp
+     575:	5b 	popl	%ebx
+     576:	c3 	retl
+Disassembly of section .plt:
+.plt:
+     580:	ff b3 04 00 00 00 	pushl	4(%ebx)
+     586:	ff a3 08 00 00 00 	jmpl	*8(%ebx)
+     58c:	00 00 	addb	%al, (%eax)
+     58e:	00 00 	addb	%al, (%eax)
+     590:	ff a3 0c 00 00 00 	jmpl	*12(%ebx)
+     596:	68 00 00 00 00 	pushl	$0
+     59b:	e9 e0 ff ff ff 	jmp	-32 <.plt>
+     5a0:	ff a3 10 00 00 00 	jmpl	*16(%ebx)
+     5a6:	68 08 00 00 00 	pushl	$8
+     5ab:	e9 d0 ff ff ff 	jmp	-48 <.plt>
+     5b0:	ff a3 14 00 00 00 	jmpl	*20(%ebx)
+     5b6:	68 10 00 00 00 	pushl	$16
+     5bb:	e9 c0 ff ff ff 	jmp	-64 <.plt>
+     5c0:	ff a3 18 00 00 00 	jmpl	*24(%ebx)
+     5c6:	68 18 00 00 00 	pushl	$24
+     5cb:	e9 b0 ff ff ff 	jmp	-80 <.plt>
+     5d0:	ff a3 1c 00 00 00 	jmpl	*28(%ebx)
+     5d6:	68 20 00 00 00 	pushl	$32
+     5db:	e9 a0 ff ff ff 	jmp	-96 <.plt>
+     5e0:	ff a3 20 00 00 00 	jmpl	*32(%ebx)
+     5e6:	68 28 00 00 00 	pushl	$40
+     5eb:	e9 90 ff ff ff 	jmp	-112 <.plt>
+     5f0:	ff a3 24 00 00 00 	jmpl	*36(%ebx)
+     5f6:	68 30 00 00 00 	pushl	$48
+     5fb:	e9 80 ff ff ff 	jmp	-128 <.plt>
+     600:	ff a3 28 00 00 00 	jmpl	*40(%ebx)
+     606:	68 38 00 00 00 	pushl	$56
+     60b:	e9 70 ff ff ff 	jmp	-144 <.plt>
+     610:	ff a3 2c 00 00 00 	jmpl	*44(%ebx)
+     616:	68 40 00 00 00 	pushl	$64
+     61b:	e9 60 ff ff ff 	jmp	-160 <.plt>
+     620:	ff a3 30 00 00 00 	jmpl	*48(%ebx)
+     626:	68 48 00 00 00 	pushl	$72
+     62b:	e9 50 ff ff ff 	jmp	-176 <.plt>
+     630:	ff a3 34 00 00 00 	jmpl	*52(%ebx)
+     636:	68 50 00 00 00 	pushl	$80
+     63b:	e9 40 ff ff ff 	jmp	-192 <.plt>
+     640:	ff a3 38 00 00 00 	jmpl	*56(%ebx)
+     646:	68 58 00 00 00 	pushl	$88
+     64b:	e9 30 ff ff ff 	jmp	-208 <.plt>
+     650:	ff a3 3c 00 00 00 	jmpl	*60(%ebx)
+     656:	68 60 00 00 00 	pushl	$96
+     65b:	e9 20 ff ff ff 	jmp	-224 <.plt>
+Disassembly of section .plt.got:
+.plt.got:
+     660:	ff a3 e8 ff ff ff 	jmpl	*-24(%ebx)
+     666:	66 90 	nop
+     668:	ff a3 ec ff ff ff 	jmpl	*-20(%ebx)
+     66e:	66 90 	nop
+Disassembly of section .text:
+main:
+     670:	8d 4c 24 04 	leal	4(%esp), %ecx
+     674:	83 e4 f0 	andl	$-16, %esp
+     677:	ff 71 fc 	pushl	-4(%ecx)
+     67a:	55 	pushl	%ebp
+     67b:	89 e5 	movl	%esp, %ebp
+     67d:	56 	pushl	%esi
+     67e:	53 	pushl	%ebx
+     67f:	e8 ec 00 00 00 	calll	236 <main+0x100>
+     684:	81 c3 7c 19 00 00 	addl	$6524, %ebx
+     68a:	51 	pushl	%ecx
+     68b:	8d b5 e8 fe ff ff 	leal	-280(%ebp), %esi
+     691:	8d 83 30 ea ff ff 	leal	-5584(%ebx), %eax
+     697:	81 ec 18 01 00 00 	subl	$280, %esp
+     69d:	50 	pushl	%eax
+     69e:	e8 4d ff ff ff 	calll	-179 <.plt+0x70>
+     6a3:	8d 83 0b ea ff ff 	leal	-5621(%ebx), %eax
+     6a9:	89 04 24 	movl	%eax, (%esp)
+     6ac:	e8 ef fe ff ff 	calll	-273 <.plt+0x20>
+     6b1:	8b 83 f0 ff ff ff 	movl	-16(%ebx), %eax
+     6b7:	83 c4 0c 	addl	$12, %esp
+     6ba:	ff 30 	pushl	(%eax)
+     6bc:	68 00 01 00 00 	pushl	$256
+     6c1:	56 	pushl	%esi
+     6c2:	e8 09 ff ff ff 	calll	-247 <.plt+0x50>
+     6c7:	83 c4 10 	addl	$16, %esp
+     6ca:	85 c0 	testl	%eax, %eax
+     6cc:	74 39 	je	57 <main+0x97>
+     6ce:	8d 83 17 ea ff ff 	leal	-5609(%ebx), %eax
+     6d4:	83 ec 08 	subl	$8, %esp
+     6d7:	50 	pushl	%eax
+     6d8:	56 	pushl	%esi
+     6d9:	e8 d2 fe ff ff 	calll	-302 <.plt+0x30>
+     6de:	89 34 24 	movl	%esi, (%esp)
+     6e1:	c6 84 05 e8 fe ff ff 00 	movb	$0, -280(%ebp,%eax)
+     6e9:	e8 32 02 00 00 	calll	562 <main+0x2B0>
+     6ee:	83 c4 10 	addl	$16, %esp
+     6f1:	85 c0 	testl	%eax, %eax
+     6f3:	74 1f 	je	31 <main+0xA4>
+     6f5:	8d 83 23 ea ff ff 	leal	-5597(%ebx), %eax
+     6fb:	83 ec 0c 	subl	$12, %esp
+     6fe:	50 	pushl	%eax
+     6ff:	e8 ec fe ff ff 	calll	-276 <.plt+0x70>
+     704:	83 c4 10 	addl	$16, %esp
+     707:	8d 65 f4 	leal	-12(%ebp), %esp
+     70a:	31 c0 	xorl	%eax, %eax
+     70c:	59 	popl	%ecx
+     70d:	5b 	popl	%ebx
+     70e:	5e 	popl	%esi
+     70f:	5d 	popl	%ebp
+     710:	8d 61 fc 	leal	-4(%ecx), %esp
+     713:	c3 	retl
+     714:	8d 83 19 ea ff ff 	leal	-5607(%ebx), %eax
+     71a:	83 ec 0c 	subl	$12, %esp
+     71d:	50 	pushl	%eax
+     71e:	e8 cd fe ff ff 	calll	-307 <.plt+0x70>
+     723:	e8 78 01 00 00 	calll	376 <main+0x230>
+     728:	83 c4 10 	addl	$16, %esp
+     72b:	eb da 	jmp	-38 <main+0x97>
+     72d:	31 ed 	xorl	%ebp, %ebp
+     72f:	5e 	popl	%esi
+     730:	89 e1 	movl	%esp, %ecx
+     732:	83 e4 f0 	andl	$-16, %esp
+     735:	50 	pushl	%eax
+     736:	54 	pushl	%esp
+     737:	52 	pushl	%edx
+     738:	e8 22 00 00 00 	calll	34 <main+0xEF>
+     73d:	81 c3 c3 18 00 00 	addl	$6339, %ebx
+     743:	8d 83 e0 e9 ff ff 	leal	-5664(%ebx), %eax
+     749:	50 	pushl	%eax
+     74a:	8d 83 80 e9 ff ff 	leal	-5760(%ebx), %eax
+     750:	50 	pushl	%eax
+     751:	51 	pushl	%ecx
+     752:	56 	pushl	%esi
+     753:	ff b3 f4 ff ff ff 	pushl	-12(%ebx)
+     759:	e8 c2 fe ff ff 	calll	-318 <.plt+0xA0>
+     75e:	f4 	hlt
+     75f:	8b 1c 24 	movl	(%esp), %ebx
+     762:	c3 	retl
+     763:	66 90 	nop
+     765:	66 90 	nop
+     767:	66 90 	nop
+     769:	66 90 	nop
+     76b:	66 90 	nop
+     76d:	66 90 	nop
+     76f:	90 	nop
+     770:	8b 1c 24 	movl	(%esp), %ebx
+     773:	c3 	retl
+     774:	66 90 	nop
+     776:	66 90 	nop
+     778:	66 90 	nop
+     77a:	66 90 	nop
+     77c:	66 90 	nop
+     77e:	66 90 	nop
+     780:	e8 17 01 00 00 	calll	279 <main+0x22C>
+     785:	81 c2 7b 18 00 00 	addl	$6267, %edx
+     78b:	8d 8a 4c 00 00 00 	leal	76(%edx), %ecx
+     791:	8d 82 4f 00 00 00 	leal	79(%edx), %eax
+     797:	29 c8 	subl	%ecx, %eax
+     799:	83 f8 06 	cmpl	$6, %eax
+     79c:	76 17 	jbe	23 <main+0x145>
+     79e:	8b 82 e4 ff ff ff 	movl	-28(%edx), %eax
+     7a4:	85 c0 	testl	%eax, %eax
+     7a6:	74 0d 	je	13 <main+0x145>
+     7a8:	55 	pushl	%ebp
+     7a9:	89 e5 	movl	%esp, %ebp
+     7ab:	83 ec 14 	subl	$20, %esp
+     7ae:	51 	pushl	%ecx
+     7af:	ff d0 	calll	*%eax
+     7b1:	83 c4 10 	addl	$16, %esp
+     7b4:	c9 	leave
+     7b5:	f3 	rep
+     7b6:	c3 	retl
+     7b7:	89 f6 	movl	%esi, %esi
+     7b9:	8d bc 27 00 00 00 00 	leal	(%edi), %edi
+     7c0:	e8 d7 00 00 00 	calll	215 <main+0x22C>
+     7c5:	81 c2 3b 18 00 00 	addl	$6203, %edx
+     7cb:	55 	pushl	%ebp
+     7cc:	8d 8a 4c 00 00 00 	leal	76(%edx), %ecx
+     7d2:	8d 82 4c 00 00 00 	leal	76(%edx), %eax
+     7d8:	89 e5 	movl	%esp, %ebp
+     7da:	53 	pushl	%ebx
+     7db:	29 c8 	subl	%ecx, %eax
+     7dd:	c1 f8 02 	sarl	$2, %eax
+     7e0:	83 ec 04 	subl	$4, %esp
+     7e3:	89 c3 	movl	%eax, %ebx
+     7e5:	c1 eb 1f 	shrl	$31, %ebx
+     7e8:	01 d8 	addl	%ebx, %eax
+     7ea:	d1 f8 	sarl	%eax
+     7ec:	74 14 	je	20 <main+0x192>
+     7ee:	8b 92 fc ff ff ff 	movl	-4(%edx), %edx
+     7f4:	85 d2 	testl	%edx, %edx
+     7f6:	74 0a 	je	10 <main+0x192>
+     7f8:	83 ec 08 	subl	$8, %esp
+     7fb:	50 	pushl	%eax
+     7fc:	51 	pushl	%ecx
+     7fd:	ff d2 	calll	*%edx
+     7ff:	83 c4 10 	addl	$16, %esp
+     802:	8b 5d fc 	movl	-4(%ebp), %ebx
+     805:	c9 	leave
+     806:	c3 	retl
+     807:	89 f6 	movl	%esi, %esi
+     809:	8d bc 27 00 00 00 00 	leal	(%edi), %edi
+     810:	55 	pushl	%ebp
+     811:	89 e5 	movl	%esp, %ebp
+     813:	53 	pushl	%ebx
+     814:	e8 57 ff ff ff 	calll	-169 <main+0x100>
+     819:	81 c3 e7 17 00 00 	addl	$6119, %ebx
+     81f:	83 ec 04 	subl	$4, %esp
+     822:	80 bb 4c 00 00 00 00 	cmpb	$0, 76(%ebx)
+     829:	75 27 	jne	39 <main+0x1E2>
+     82b:	8b 83 e8 ff ff ff 	movl	-24(%ebx), %eax
+     831:	85 c0 	testl	%eax, %eax
+     833:	74 11 	je	17 <main+0x1D6>
+     835:	83 ec 0c 	subl	$12, %esp
+     838:	ff b3 44 00 00 00 	pushl	68(%ebx)
+     83e:	e8 1d fe ff ff 	calll	-483 <.plt.got>
+     843:	83 c4 10 	addl	$16, %esp
+     846:	e8 35 ff ff ff 	calll	-203 <main+0x110>
+     84b:	c6 83 4c 00 00 00 01 	movb	$1, 76(%ebx)
+     852:	8b 5d fc 	movl	-4(%ebp), %ebx
+     855:	c9 	leave
+     856:	c3 	retl
+     857:	89 f6 	movl	%esi, %esi
+     859:	8d bc 27 00 00 00 00 	leal	(%edi), %edi
+     860:	e8 37 00 00 00 	calll	55 <main+0x22C>
+     865:	81 c2 9b 17 00 00 	addl	$6043, %edx
+     86b:	8d 82 f0 fe ff ff 	leal	-272(%edx), %eax
+     871:	8b 08 	movl	(%eax), %ecx
+     873:	85 c9 	testl	%ecx, %ecx
+     875:	75 09 	jne	9 <main+0x210>
+     877:	e9 44 ff ff ff 	jmp	-188 <main+0x150>
+     87c:	8d 74 26 00 	leal	(%esi), %esi
+     880:	8b 92 f8 ff ff ff 	movl	-8(%edx), %edx
+     886:	85 d2 	testl	%edx, %edx
+     888:	74 ed 	je	-19 <main+0x207>
+     88a:	55 	pushl	%ebp
+     88b:	89 e5 	movl	%esp, %ebp
+     88d:	83 ec 14 	subl	$20, %esp
+     890:	50 	pushl	%eax
+     891:	ff d2 	calll	*%edx
+     893:	83 c4 10 	addl	$16, %esp
+     896:	c9 	leave
+     897:	e9 24 ff ff ff 	jmp	-220 <main+0x150>
+     89c:	8b 14 24 	movl	(%esp), %edx
+     89f:	c3 	retl
+     8a0:	53 	pushl	%ebx
+     8a1:	e8 ca fe ff ff 	calll	-310 <main+0x100>
+     8a6:	81 c3 5a 17 00 00 	addl	$5978, %ebx
+     8ac:	83 ec 08 	subl	$8, %esp
+     8af:	e8 2c fd ff ff 	calll	-724 <.plt+0x60>
+     8b4:	83 ec 04 	subl	$4, %esp
+     8b7:	50 	pushl	%eax
+     8b8:	50 	pushl	%eax
+     8b9:	50 	pushl	%eax
+     8ba:	e8 91 fd ff ff 	calll	-623 <.plt+0xD0>
+     8bf:	8d 83 00 ea ff ff 	leal	-5632(%ebx), %eax
+     8c5:	89 04 24 	movl	%eax, (%esp)
+     8c8:	e8 33 fd ff ff 	calll	-717 <.plt+0x80>
+     8cd:	83 c4 18 	addl	$24, %esp
+     8d0:	5b 	popl	%ebx
+     8d1:	c3 	retl
+     8d2:	8d b4 26 00 00 00 00 	leal	(%esi), %esi
+     8d9:	8d bc 27 00 00 00 00 	leal	(%edi), %edi
+     8e0:	57 	pushl	%edi
+     8e1:	56 	pushl	%esi
+     8e2:	53 	pushl	%ebx
+     8e3:	e8 88 fe ff ff 	calll	-376 <main+0x100>
+     8e8:	81 c3 18 17 00 00 	addl	$5912, %ebx
+     8ee:	83 ec 0c 	subl	$12, %esp
+     8f1:	8b b3 48 00 00 00 	movl	72(%ebx), %esi
+     8f7:	56 	pushl	%esi
+     8f8:	e8 13 fd ff ff 	calll	-749 <.plt+0x90>
+     8fd:	89 34 24 	movl	%esi, (%esp)
+     900:	89 c7 	movl	%eax, %edi
+     902:	e8 29 fd ff ff 	calll	-727 <.plt+0xB0>
+     907:	89 c6 	movl	%eax, %esi
+     909:	58 	popl	%eax
+     90a:	5a 	popl	%edx
+     90b:	57 	pushl	%edi
+     90c:	56 	pushl	%esi
+     90d:	e8 2e fd ff ff 	calll	-722 <.plt+0xC0>
+     912:	83 c4 10 	addl	$16, %esp
+     915:	89 f0 	movl	%esi, %eax
+     917:	5b 	popl	%ebx
+     918:	5e 	popl	%esi
+     919:	5f 	popl	%edi
+     91a:	c3 	retl
+     91b:	90 	nop
+     91c:	8d 74 26 00 	leal	(%esi), %esi
+     920:	57 	pushl	%edi
+     921:	56 	pushl	%esi
+     922:	53 	pushl	%ebx
+     923:	e8 48 fe ff ff 	calll	-440 <main+0x100>
+     928:	81 c3 d8 16 00 00 	addl	$5848, %ebx
+     92e:	83 ec 0c 	subl	$12, %esp
+     931:	8b b3 48 00 00 00 	movl	72(%ebx), %esi
+     937:	56 	pushl	%esi
+     938:	e8 d3 fc ff ff 	calll	-813 <.plt+0x90>
+     93d:	89 34 24 	movl	%esi, (%esp)
+     940:	89 c7 	movl	%eax, %edi
+     942:	e8 e9 fc ff ff 	calll	-791 <.plt+0xB0>
+     947:	89 c6 	movl	%eax, %esi
+     949:	58 	popl	%eax
+     94a:	5a 	popl	%edx
+     94b:	57 	pushl	%edi
+     94c:	56 	pushl	%esi
+     94d:	e8 ee fc ff ff 	calll	-786 <.plt+0xC0>
+     952:	59 	popl	%ecx
+     953:	5f 	popl	%edi
+     954:	56 	pushl	%esi
+     955:	ff 74 24 1c 	pushl	28(%esp)
+     959:	e8 32 fc ff ff 	calll	-974 <.plt+0x10>
+     95e:	89 34 24 	movl	%esi, (%esp)
+     961:	89 c7 	movl	%eax, %edi
+     963:	e8 58 fc ff ff 	calll	-936 <.plt+0x40>
+     968:	83 c4 10 	addl	$16, %esp
+     96b:	89 f8 	movl	%edi, %eax
+     96d:	5b 	popl	%ebx
+     96e:	5e 	popl	%esi
+     96f:	5f 	popl	%edi
+     970:	c3 	retl
+     971:	66 90 	nop
+     973:	66 90 	nop
+     975:	66 90 	nop
+     977:	66 90 	nop
+     979:	66 90 	nop
+     97b:	66 90 	nop
+     97d:	66 90 	nop
+     97f:	90 	nop
+     980:	55 	pushl	%ebp
+     981:	57 	pushl	%edi
+     982:	56 	pushl	%esi
+     983:	53 	pushl	%ebx
+     984:	e8 e7 fd ff ff 	calll	-537 <main+0x100>
+     989:	81 c3 77 16 00 00 	addl	$5751, %ebx
+     98f:	83 ec 0c 	subl	$12, %esp
+     992:	8b 6c 24 20 	movl	32(%esp), %ebp
+     996:	8d b3 ec fe ff ff 	leal	-276(%ebx), %esi
+     99c:	e8 b3 fb ff ff 	calll	-1101 <.init>
+     9a1:	8d 83 e8 fe ff ff 	leal	-280(%ebx), %eax
+     9a7:	29 c6 	subl	%eax, %esi
+     9a9:	c1 fe 02 	sarl	$2, %esi
+     9ac:	85 f6 	testl	%esi, %esi
+     9ae:	74 25 	je	37 <main+0x365>
+     9b0:	31 ff 	xorl	%edi, %edi
+     9b2:	8d b6 00 00 00 00 	leal	(%esi), %esi
+     9b8:	83 ec 04 	subl	$4, %esp
+     9bb:	ff 74 24 2c 	pushl	44(%esp)
+     9bf:	ff 74 24 2c 	pushl	44(%esp)
+     9c3:	55 	pushl	%ebp
+     9c4:	ff 94 bb e8 fe ff ff 	calll	*-280(%ebx,%edi,4)
+     9cb:	83 c7 01 	addl	$1, %edi
+     9ce:	83 c4 10 	addl	$16, %esp
+     9d1:	39 fe 	cmpl	%edi, %esi
+     9d3:	75 e3 	jne	-29 <main+0x348>
+     9d5:	83 c4 0c 	addl	$12, %esp
+     9d8:	5b 	popl	%ebx
+     9d9:	5e 	popl	%esi
+     9da:	5f 	popl	%edi
+     9db:	5d 	popl	%ebp
+     9dc:	c3 	retl
+     9dd:	8d 76 00 	leal	(%esi), %esi
+     9e0:	f3 	rep
+     9e1:	c3 	retl
+Disassembly of section .fini:
+.fini:
+     9e4:	53 	pushl	%ebx
+     9e5:	83 ec 08 	subl	$8, %esp
+     9e8:	e8 83 fd ff ff 	calll	-637 <main+0x100>
+     9ed:	81 c3 13 16 00 00 	addl	$5651, %ebx
+     9f3:	83 c4 08 	addl	$8, %esp
+     9f6:	5b 	popl	%ebx
+     9f7:	c3 	retl
